@@ -612,7 +612,11 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
   color: var(--form-text-color);
-  border-color: var(--form-border-color);
+}
+
+.campo__field:focus {
+  color: var(--form-text-color);
+  border-color: var(--tiuto);
 }
 
 .campo__field--textare {
