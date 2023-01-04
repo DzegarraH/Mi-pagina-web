@@ -3,7 +3,8 @@
 
 <head>
 
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">4
+  <meta name="description" content="Hola soy Da  vid Zegarra Hurtado Developer Web junior">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -285,20 +286,23 @@
       Contacto
     </h3>
 
-    <form class="formulario">
+    <form class="formulario" action="https://formsubmit.co/David.Zegarra.Hurtado@hotmail.com" method="POST">
       <div class="campo">
         <label class="campo__label" for="nombre">Nombre</label>
-        <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+        <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre sólo acepta letras y espacios en blanco" required>
       </div>
 
       <div class="campo">
         <label class="campo__label" for="email">Correo</label>
-        <input class="campo__field" type="email" placeholder="Tu Correo" id="email">
+        <input class="campo__field" type="email" placeholder="Tu Correo" id="email"
+          pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido" required>
       </div>
 
       <div class="campo">
         <label class="campo__label" for="comentario">Mensaje</label>
-        <textarea class="campo__field--textare" id="comentario"></textarea>
+        <textarea class="campo__field--textare" id="comentario" placeholder="Escribe tus comentarios"
+          required></textarea>
       </div>
 
       <div class="campo__botom">

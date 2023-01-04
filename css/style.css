@@ -11,6 +11,12 @@
   --html5: #ff9000;
   --css3: #2369ff;
   --js: #ffff00;
+  --form-text-color: #666;
+  --form-placeholder-color: #006999;
+  --form-success-color: #4caf50;
+  --form-error-color: #f44336;
+  --form-bg-color: #eee;
+  --form-border-color: #222;
 }
 
 html {
@@ -576,12 +582,14 @@ a {
 }
 
 .formulario {
-  background-color: var(--blanco);
-  margin: 2rem auto;
+  background-color: var(--fondo-img);
+  margin: 2.5rem auto;
   max-width: 60rem;
   padding: 1.5rem;
   border-radius: 2rem;
   box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.75);
+  color: var(--form-border-color);
+  caret-color: var(--tiuto);
 }
 
 .campo {
@@ -592,7 +600,7 @@ a {
 
 .campo__label {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0.5rem;
 }
 
@@ -602,12 +610,44 @@ a {
   border: 1px solid var(--gris);
   border-radius: 1rem;
   padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--form-text-color);
+  border-color: var(--form-border-color);
 }
 
 .campo__field--textare {
   height: 20rem;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  resize: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  color: var(--form-text-color);
+  border-color: var(--form-border-color);
+}
+
+.campo__field[required]:invalid {
+  border-color: var(--form-error-color);
+}
+
+.campo__field--textare[required]:invalid {
+  border-color: var(--form-error-color);
+}
+
+.campo__field[required]:valid {
+  border-color: var(--form-success-color);
+}
+
+.campo__field--textare[required]:valid {
+  border-color: var(--form-success-color);
+}
+
+.campo__field::placeholder {
+  border-color: var(--form-border-color);
+}
+
+.campo__field--textare::placeholder {
+  border-color: var(--form-border-color);
 }
 
 .campo__botom {
@@ -994,7 +1034,7 @@ a {
   }
 
   #portafolio .container-portafolio .portafolio {
-     max-width: 39rem;
+    max-width: 39rem;
     position: relative;
     transition: filter 0.5s ease;
     filter: saturate(0);
@@ -1038,7 +1078,6 @@ a {
     flex: 0 0 9rem;
     text-align: center;
     padding-right: 1rem;
-    font-size: 2rem;
   }
 
   .campo__botom {
