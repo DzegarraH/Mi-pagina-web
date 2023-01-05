@@ -372,6 +372,7 @@ a {
 
 #habilidades {
   width: 100%;
+  height: 70rem;
   background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
     url(../img/fondo-skills.jpg);
   background-position: center;
