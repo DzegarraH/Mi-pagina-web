@@ -1071,15 +1071,19 @@ a {
   #portafolio {
     margin: 2rem auto;
     padding: 4rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   #portafolio .container-portafolio {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 4rem auto 0;
+    margin: 4rem auto ;
     justify-items: center;
     align-items: center;
-    width: 80%;
+    gap: 4rem;
   }
 
   #portafolio .container-portafolio .portafolio {
