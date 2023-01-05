@@ -372,8 +372,8 @@ a {
 
 #habilidades {
   width: 100%;
-  height: 70rem;
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
+  min-height: 60rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo-skills.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -383,7 +383,7 @@ a {
   padding: 4rem 0;
   display: grid;
   grid-template-rows: 7rem 1fr;
-  margin-top: 4rem;
+  margin-top: 4rem;   
 }
 
 #habilidades .habilidades__titulo {
@@ -494,7 +494,7 @@ a {
 }
 
 .barra-js {
-  width: 10%;
+  width: 5%;
   height: 4px;
   border-radius: 2.5px 0 0 2.5px;
   background-color: var(--js);
@@ -725,7 +725,7 @@ a {
   }
 
   #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__titulo {
-    padding-left: -40rem;
+    margin-left: -4rem;
   }
 
   /* ====== SERVICIO HTML CSS JS ====== */
@@ -894,7 +894,7 @@ a {
   #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__titulo {
     text-align: start;
     padding: 0;
-    margin-top: 2rem;
+    margin: 2rem 1rem;
   }
 
   #sobre-mi .container__sobre-mi .sobre-mi__descripcion h2 {
@@ -949,11 +949,12 @@ a {
   .html5,
   .css3,
   .js- {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in, background-color 0.5s ease-in-out;
   }
 
   #servicios .servicios__fila .servicio:hover {
     transform: scale(1.03);
+    background-color: rgba(235, 235, 235, 0.7);
   }
 
   .html5:hover {
@@ -978,41 +979,62 @@ a {
 
   #habilidades .habilidades__html-css-js .container__lenguaje {
     flex-direction: row;
-    width: 70vw;
+    width: 60vw;
   }
 
   #habilidades .habilidades__html-css-js .container__lenguaje .habilidad__img {
     height: 10rem;
     width: 10rem;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .img__html5:hover {
+    box-shadow: 0px 0px 10px 1px var(--html5);
+  }
+
+  .img__css3:hover {
+    box-shadow: 0px 0px 10px 1px var(--css3);
+  }
+
+  .img__js:hover {
+    box-shadow: 0px 0px 10px 1px var(--js);
   }
 
   #habilidades
     .habilidades__html-css-js
     .container__lenguaje
     .habilidad__img:hover {
-    background-color: rgba(182, 180, 180, 0.6);
+    background-color: rgba(182, 180, 180, 0.8);
   }
-
+  
   #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .habilidad__img
-    img {
+  .habilidades__html-css-js
+  .container__lenguaje
+  .habilidad__img
+  img {
     width: 7rem;
     height: 7rem;
-    transition: transform 0.5s ease, filter 0.5s ease;
-    filter: saturate(0);
+    transition: transform 0.5s ease;
   }
-
+  
   #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .habilidad__img
-    img:hover {
-    filter: saturate(1);
+  .habilidades__html-css-js
+  .container__lenguaje
+  .habilidad__img
+  img:hover {
     transform: scale(1.03);
   }
+  
+  
+  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel{
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    
+  }
+  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel:hover{
+    transform: scaley(1.1);
+    background-color: rgba(182, 180, 180, 0.8);
+    
+}
 
   #habilidades
     .habilidades__html-css-js
