@@ -164,18 +164,24 @@ a {
 
 .container-bienvenida .bienvenido {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .container-bienvenida .bienvenido__texto {
   width: 90%;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .container-bienvenida .bienvenido__texto span {
   color: var(--tiuto);
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.container-bienvenida .bienvenido__texto .bienvenido__subtexto {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 .container-bienvenida .bienvenido__resumen {
@@ -295,6 +301,9 @@ a {
   margin: 0;
   padding: 50px 15px;
   background-color: var(--fondo-img);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #servicios h2 {
@@ -325,6 +334,7 @@ a {
   text-align: center;
   border-radius: 2rem;
   padding: 2rem;
+  cursor: pointer;
 }
 
 #servicios .servicios__fila .servicio .icono {
@@ -372,7 +382,7 @@ a {
 
 #habilidades {
   width: 100%;
-  min-height: 60rem;
+  height: 75rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo-skills.jpg);
   background-position: center;
@@ -380,10 +390,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 4rem 0;
+  padding: 3rem 0;
   display: grid;
   grid-template-rows: 7rem 1fr;
-  margin-top: 4rem;   
+  margin-top: 3rem;
+  align-items: center;
 }
 
 #habilidades .habilidades__titulo {
@@ -584,9 +595,9 @@ a {
 
 .formulario {
   background-color: var(--fondo-img);
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   max-width: 60rem;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
   box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.75);
   color: var(--form-border-color);
@@ -603,9 +614,10 @@ a {
   text-align: left;
   font-size: 2rem;
   padding: 0.5rem;
+  font-weight: 600;
 }
 
-.campo__field {
+.formulario .campo .campo__field {
   flex: 1;
   width: 100%;
   border: 1px solid var(--gris);
@@ -613,6 +625,7 @@ a {
   padding: 1rem;
   font-size: 1.5rem;
   color: var(--form-text-color);
+  border-color: var(--form-border-color);
 }
 
 .campo__field:focus {
@@ -620,8 +633,8 @@ a {
   border-color: var(--tiuto);
 }
 
-.campo__field--textare {
-  height: 20rem;
+.formulario .campo .campo__field--textare {
+  height: 15rem;
   width: 100%;
   border-radius: 1rem;
   resize: none;
@@ -635,16 +648,16 @@ a {
   border-color: var(--form-error-color);
 }
 
-.campo__field--textare[required]:invalid {
-  border-color: var(--form-error-color);
-}
-
 .campo__field[required]:valid {
   border-color: var(--form-success-color);
 }
 
 .campo__field--textare[required]:valid {
   border-color: var(--form-success-color);
+}
+
+.campo__field--textare[required]:invalid {
+  border-color: var(--form-error-color);
 }
 
 .campo__field::placeholder {
@@ -665,8 +678,9 @@ a {
   border-radius: 2rem;
   font-size: 2rem;
   color: var(--negro);
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
+  cursor: pointer;
 }
 
 /* ====== FOOTER ====== */
@@ -691,8 +705,8 @@ a {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  justify-content: space-evenly;
-  width: 80%;
+  justify-content: space-between;
+  width: 90%;
   padding: 1rem;
 }
 
@@ -729,25 +743,23 @@ a {
   }
 
   /* ====== SERVICIO HTML CSS JS ====== */
+  #servicios {
+    height: 60rem;
+  }
   #servicios .servicios__fila {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
     gap: 1.5rem;
   }
-  /* ====== HABILIDADES ====== */
-
-  #habilidades .container-habilidades {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    min-height: 150px;
-    margin: 0 auto;
-  }
 
   /* ====== PORTAFOLIO ====== */
   #portafolio .container-portafolio .portafolio .portafolio__img img {
     border-radius: 1rem;
+  }
+
+  .footer .footer_container {
+    justify-content: space-evenly;
   }
 }
 
@@ -823,15 +835,19 @@ a {
 
   /* ====== BIENVENIDO ====== */
   .container-bienvenida .bienvenido {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .container-bienvenida .bienvenido__texto {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .container-bienvenida .bienvenido__texto span {
     font-size: 2.5rem;
+  }
+
+  .container-bienvenida .bienvenido__texto .bienvenido__subtexto {
+    font-size: 4rem;
   }
 
   .container-bienvenida .bienvenido__resumen {
@@ -945,11 +961,13 @@ a {
   #servicios .servicios__fila {
     margin: 0 9rem;
   }
+
   #servicios .servicios__fila .servicio,
   .html5,
   .css3,
   .js- {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in, background-color 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in,
+      background-color 0.5s ease-in-out;
   }
 
   #servicios .servicios__fila .servicio:hover {
@@ -971,7 +989,8 @@ a {
 
   /* ====== HABILIDADES  HTML CSS JS ====== */
   #habilidades {
-    padding-top: 6rem;
+    padding-top: 4rem;
+    height: 65rem;
   }
   #habilidades .habilidades__html-css-js {
     align-items: center;
@@ -1005,36 +1024,39 @@ a {
     .container__lenguaje
     .habilidad__img:hover {
     background-color: rgba(182, 180, 180, 0.8);
+    cursor: pointer;
   }
-  
+
   #habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .habilidad__img
-  img {
+    .habilidades__html-css-js
+    .container__lenguaje
+    .habilidad__img
+    img {
     width: 7rem;
     height: 7rem;
     transition: transform 0.5s ease;
   }
-  
+
   #habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .habilidad__img
-  img:hover {
+    .habilidades__html-css-js
+    .container__lenguaje
+    .habilidad__img
+    img:hover {
     transform: scale(1.03);
   }
-  
-  
-  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel{
-    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
-    
+
+  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel {
+    transition: transform 0.5s ease, background-color 0.5s ease,
+      box-shadow 0.5s ease;
   }
-  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel:hover{
+  #habilidades
+    .habilidades__html-css-js
+    .container__lenguaje
+    .container-nivel:hover {
     transform: scaley(1.1);
     background-color: rgba(182, 180, 180, 0.8);
-    
-}
+    cursor: pointer;
+  }
 
   #habilidades
     .habilidades__html-css-js
@@ -1111,10 +1133,12 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 1rem;
     width: 100%;
   }
+
   .campo__botom .boton__contacto-final {
-    margin-right: 1rem;
+    margin-right: 2rem;
     border: 2px solid var(--negro);
     border-radius: 2rem;
     font-size: 2rem;
