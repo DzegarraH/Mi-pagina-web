@@ -58,9 +58,7 @@ a {
   background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/Qué-es-full-stack-Pygmalion-Tech.png);
   background-position: center center;
-  background-size: cover;
   background-attachment: fixed;
-
 }
 
 /* ====== NAVEGACIÓN FIJA ====== */
@@ -387,9 +385,9 @@ a {
   height: 75rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo-skills.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;   
+  background-position: center;
+  background-attachment: fixed;
   padding: 3rem 0;
   display: grid;
   grid-template-rows: 7rem 1fr;
@@ -1080,7 +1078,7 @@ a {
   #portafolio .container-portafolio {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 4rem auto ;
+    margin: 4rem auto;
     justify-items: center;
     align-items: center;
     gap: 4rem;
