@@ -506,6 +506,7 @@ a {
   background-color: var(--js);
 }
 
+
 /* ====== PORTAFOLIO ====== */
 #portafolio {
   margin: 0 auto;
@@ -1131,9 +1132,9 @@ a {
   }
 
   .campo__label {
-    flex: 0 0 9rem;
-    text-align: center;
-    padding-right: 1rem;
+    width: 10rem;
+    text-align: left;
+    padding-right: 3rem;
   }
 
   .campo__botom {
