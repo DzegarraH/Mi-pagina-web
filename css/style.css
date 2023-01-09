@@ -85,7 +85,7 @@ a {
   padding: 0.5rem 0;
 }
 
-/* ====== NAVEGACION ENLACES DESKTOP ====== */
+/* ====== NAVEGACIÓN ENLACES DESKTOP ====== */
 .container__nav-desktop {
   display: none;
 }
@@ -389,7 +389,6 @@ a {
   padding: 3rem 0;
   display: grid;
   grid-template-rows: 7rem 1fr;
-  margin-top: 3rem;
   align-items: center;
 }
 
@@ -509,8 +508,8 @@ a {
 
 /* ====== PORTAFOLIO ====== */
 #portafolio {
-  margin: 2rem auto;
-  padding-top: 3rem;
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
   background-color: var(--fondo-img);
 }
 
@@ -1074,7 +1073,6 @@ a {
 
   /* ====== PORTAFOLIO ====== */
   #portafolio {
-    margin: 2rem auto;
     padding: 4rem;
     height: 60rem;
     display: flex;
