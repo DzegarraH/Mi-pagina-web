@@ -511,6 +511,7 @@ a {
 #portafolio {
   margin: 2rem auto;
   padding-top: 3rem;
+  background-color: var(--fondo-img);
 }
 
 #portafolio .portafolio__titulo {
