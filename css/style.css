@@ -187,7 +187,7 @@ a {
 .container-bienvenida .bienvenido__resumen {
   width: 80%;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 1rem;
   letter-spacing: 1px;
 }
@@ -854,6 +854,7 @@ a {
 
   .container-bienvenida .bienvenido__resumen {
     font-size: 3rem;
+    font-weight: 600;
   }
 
   .container-bienvenida .bienvenido__boton {
