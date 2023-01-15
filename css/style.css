@@ -375,6 +375,7 @@ a {
 }
 
 #servicios .servicios__fila .servicio p {
+  font-size: 1.3rem;
   margin-bottom: 3rem;
   letter-spacing: 2px;
 }
@@ -932,7 +933,7 @@ a {
 
   #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__resumen {
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
     padding-left: 0;
     margin: 0;
