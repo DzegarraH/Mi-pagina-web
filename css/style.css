@@ -80,8 +80,9 @@ a {
   justify-content: center;
 }
 
-.container__logo h1 {
+.logo__titulo {
   color: var(--tiuto);
+  margin-top: -.4rem;
 }
 
 /* ====== NAVEGACIÓN ENLACES DESKTOP ====== */
@@ -98,8 +99,12 @@ a {
   margin-right: 1.5rem;
 }
 
-.red__social a img {
+.red__social {
   width: 2rem;
+}
+
+.social__img {
+  width: 100%;
 }
 
 /* ====== BARS MÓVIL ====== */
@@ -109,12 +114,12 @@ a {
   justify-content: flex-end;
 }
 
-.container-bars label img {
+.bars_img {
   width: 30px;
   margin-right: 1rem;
 }
 
-.container-bars .btn-menu {
+.btn-menu {
   display: none;
 }
 
@@ -123,16 +128,10 @@ a {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: -40rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem 0;
-  transition: 0.5s ease;
-}
-
-.container__nav-movil .enlaces__nav h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--blanco);
+  top: -50rem;
+  background-color: var(--negro-transparente);
+  padding: 2rem 0;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-menu:checked ~ .container__nav-movil {
@@ -141,11 +140,19 @@ a {
   transition: 0.5s ease;
 }
 
-.container__nav-movil .nav__movil {
+.nav__movil {
   position: relative;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  gap: 1.5rem;
+  align-items: center;
+  gap: 5rem;
+  z-index: 97;
+}
+
+.nav__movil-titulo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--blanco);
 }
 
 /* ====== BIENVENIDO ====== */
@@ -161,29 +168,29 @@ a {
   gap: 2rem;
 }
 
-.container-bienvenida .bienvenido {
+.bienvenido {
   font-weight: 200;
   font-size: 3rem;
 }
 
-.container-bienvenida .bienvenido__texto {
+.bienvenido__texto {
   width: 90%;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.container-bienvenida .bienvenido__texto span {
+.bienvenido__texto span {
   color: var(--tiuto);
   font-size: 1.5rem;
 }
 
-.container-bienvenida .bienvenido__texto .bienvenido__subtexto {
+.bienvenido__subtexto {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
 }
 
-.container-bienvenida .bienvenido__resumen {
+.bienvenido__resumen {
   width: 80%;
   font-size: 2rem;
   font-weight: 500;
@@ -191,12 +198,12 @@ a {
   letter-spacing: 1px;
 }
 
-.container-bienvenida .bienvenido__boton {
+.bienvenido__boton {
   display: flex;
   justify-content: center;
 }
 
-.container-bienvenida .bienvenido__boton a {
+.boton__portafolio {
   padding: 2rem;
   border: 2px solid var(--blanco);
   border-radius: 3rem;
@@ -211,13 +218,13 @@ a {
   max-width: 100rem;
 }
 
-#sobre-mi .container__sobre-mi {
+.container__sobre-mi {
   display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__img {
+.sobre-mi__img {
   margin: 3.5rem auto 1rem;
   background-color: var(--fondo-img);
   border-radius: 2rem;
@@ -225,14 +232,14 @@ a {
   max-height: 25rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__img img {
+.sobre-mi__foto {
   max-width: 20rem;
   max-height: 25rem;
   padding: 1rem;
   border-radius: 2rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion {
+.sobre-mi__descripcion {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   max-height: 55rem;
@@ -240,7 +247,7 @@ a {
   padding-left: 1rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__titulo {
+.sobre-mi__titulo {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
@@ -250,7 +257,7 @@ a {
   margin-top: 1rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion h2 {
+.sobre-mi__sub-titulo{
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
@@ -258,12 +265,12 @@ a {
   letter-spacing: 2px;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion h2 span {
+.subtitulo__span {
   color: var(--tiuto);
   font-size: 3.5rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion h3 {
+.sobre-mi__sub-titulo-2 {
   width: 90%;
   margin: 0 auto;
   font-size: 2rem;
@@ -271,23 +278,19 @@ a {
   font-weight: 400;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__resumen {
+.sobre-mi__resumen {
   width: 90%;
   margin: 1rem auto;
   font-size: 1.5rem;
 }
 
-#sobre-mi .container__sobre-mi .sobre-mi__descripcion .boton__sobremi {
+.boton__sobremi {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#sobre-mi
-  .container__sobre-mi
-  .sobre-mi__descripcion
-  .boton__sobremi
-  .sobre-mi__cv {
+.sobre-mi__cv {
   color: var(--negro);
   border: 1px solid var(--negro);
   padding: 1rem 4rem;
@@ -306,7 +309,7 @@ a {
   justify-content: space-around;
 }
 
-#servicios h2 {
+.servicios__titulo {
   text-align: center;
   font-weight: 500;
   font-size: 3rem;
@@ -316,14 +319,14 @@ a {
   margin-bottom: 3rem;
 }
 
-#servicios .servicios__fila {
+.servicios__fila {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   gap: 1.5rem;
 }
 
-#servicios .servicios__fila .servicio {
+.servicio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -337,7 +340,7 @@ a {
   cursor: pointer;
 }
 
-#servicios .servicios__fila .servicio .icono {
+.servicio__icono {
   display: grid;
   place-items: center;
   background-color: var(--fondo-servicio);
@@ -347,24 +350,24 @@ a {
   margin: .5rem;
 }
 
-#servicios .servicios__fila .servicio .icono img {
+.servicio__img {
   width: 5rem;
   height: 5rem;
 }
 
-#servicios .servicios__fila .servicio h3 {
+.titulo__servicio {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
 }
 
-#servicios .servicios__fila .servicio hr {
+.separador{
   width: 30%;
   margin-bottom: 1rem;
 }
 
-#servicios .servicios__fila .servicio .servicio__tecnica {
+.servicio__tecnica {
   display: flex;
   list-style: none;
   flex-direction: row;
@@ -373,7 +376,7 @@ a {
   padding: 0;
 }
 
-#servicios .servicios__fila .servicio p {
+.servicio__descripcion {
   font-size: 1.3rem;
   margin: .5rem;
   letter-spacing: 2px;
@@ -393,7 +396,7 @@ a {
   align-items: center;
 }
 
-#habilidades .habilidades__titulo {
+.habilidades__titulo {
   text-align: center;
   color: var(--blanco);
   font-size: 3rem;
@@ -404,7 +407,7 @@ a {
   margin-bottom: 1rem;
 }
 
-#habilidades .habilidades__html-css-js {
+.habilidades__html-css-js {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -412,7 +415,7 @@ a {
   width: 100%;
 }
 
-#habilidades .habilidades__html-css-js .container__lenguaje {
+.container__lenguaje {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,7 +423,7 @@ a {
   padding-bottom: 2.5rem;
 }
 
-#habilidades .habilidades__html-css-js .container__lenguaje .habilidad__img {
+.habilidad__img {
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -429,7 +432,7 @@ a {
   width: 6rem;
 }
 
-#habilidades .habilidades__html-css-js .container__lenguaje .container-nivel {
+.container-nivel {
   display: flex;
   flex-direction: column;
   background-color: var(--blanco-transparente);
@@ -440,19 +443,13 @@ a {
   padding: 1rem;
 }
 
-#habilidades
-  .habilidades__html-css-js
-  .container__lenguaje.container-nivel.nivel__titulo {
+.container-nivel.nivel__titulo {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
 }
 
-#habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .container-nivel
-  .p {
+.porcentaje {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -460,20 +457,12 @@ a {
   width: 90%;
   margin-top: 1rem;
 }
-#habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .container-nivel
-  .p
-  p {
+
+.porcentaje__description{
   font-size: 1.8rem;
 }
 
-#habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .container-nivel
-  .nivel__porcentaje {
+.nivel__porcentaje {
   border: 1px solid var(--negro);
   height: 0.6rem;
   width: 90%;
@@ -481,12 +470,7 @@ a {
   margin: 0.5rem 0;
 }
 
-#habilidades
-  .habilidades__html-css-js
-  .container__lenguaje
-  .container-nivel
-  .nivel__porcentaje
-  .porcentaje__barra {
+.barra-html{
   width: 48%;
   height: 4px;
   border-radius: 2.5px 0 0 2.5px;
@@ -515,7 +499,7 @@ a {
   background-color: var(--fondo-img);
 }
 
-#portafolio .portafolio__titulo {
+.portafolio__titulo {
   text-align: center;
   color: var(--negro);
   font-size: 3rem;
@@ -526,7 +510,7 @@ a {
   margin-top: 2rem;
 }
 
-#portafolio .container-portafolio {
+.container-portafolio {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
@@ -534,18 +518,18 @@ a {
   margin-top: 2rem;
 }
 
-#portafolio .container-portafolio .portafolio {
+.portafolio {
   max-width: 43rem;
   min-height: auto;
   position: relative;
 }
 
-#portafolio .container-portafolio .portafolio .portafolio__img {
+.portafolio__enlace {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
-#portafolio .container-portafolio .portafolio .portafolio__img img {
+.portafolio__img {
   border: 1px solid var(--negro);
   width: 100%;
   height: 31rem;
@@ -553,7 +537,7 @@ a {
   object-fit: cover;
 }
 
-#portafolio .container-portafolio .portafolio .info {
+.info {
   color: var(--tiuto);
   width: 100%;
   position: absolute;
@@ -563,12 +547,12 @@ a {
   border-radius: 0 0 1rem 1rem;
 }
 
-#portafolio .container-portafolio .portafolio .info h3 {
+.mini-titulo {
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-#portafolio .container-portafolio .portafolio .info p {
+.descripcon-proyecto {
   font-size: 1rem;
   padding-left: 1rem;
 }
@@ -580,7 +564,7 @@ a {
   padding: 1rem;
 }
 
-#contacto .titulo__contacto {
+.titulo__contacto {
   text-align: center;
   color: var(--negro);
   font-size: 3rem;
@@ -615,7 +599,7 @@ a {
   font-weight: 600;
 }
 
-.formulario .campo .campo__field {
+.campo__field {
   flex: 1;
   width: 100%;
   border: 1px solid var(--gris);
@@ -631,7 +615,7 @@ a {
   border-color: var(--tiuto);
 }
 
-.formulario .campo .campo__field--textare {
+.campo__field--textare {
   height: 15rem;
   width: 100%;
   border-radius: 1rem;
@@ -670,7 +654,7 @@ a {
   width: 90%;
   margin: 1rem auto;
 }
-.campo__botom .boton__contacto-final {
+.boton__contacto-final {
   padding: 1rem 3rem;
   border: 2px solid var(--negro);
   border-radius: 2rem;
@@ -692,14 +676,14 @@ a {
   justify-content: center;
 }
 
-.footer h2 {
+.footer__titulo {
   font-size: 1.5rem;
   color: var(--fondo-servicio);
   text-align: center;
   padding: 1rem;
 }
 
-.footer .footer_container {
+.footer_container {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
@@ -708,13 +692,13 @@ a {
   padding: 1rem;
 }
 
-.footer .footer_container .footer__social {
+.footer__social {
   display: flex;
   flex-direction: row;
   place-items: center;
 }
 
-.footer .footer_container .footer__social a img {
+.footer__img {
   height: 2rem;
   width: 2rem;
 }

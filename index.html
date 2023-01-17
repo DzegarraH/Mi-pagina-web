@@ -22,7 +22,7 @@
     <div class="container-header">
       <!--====== LOGO ======-->
       <div class="container__logo">
-        <h1>
+        <h1 class="logo__titulo">
           /DZ/
         </h1>
       </div>
@@ -35,66 +35,85 @@
         <div class="enlaces__nav"><a href="#portafolio">PortFolio</a></div>
         <div class="enlaces__nav"><a href="#contacto">Contacto</a></div>
       </nav>
+
       <!--====== REDES SOCIALES MOVIL Y DESKTOP ======-->
       <div class="container__redes">
-        <div class="red__social messenger">
+        <!--***************** messenger ******************-->
+        <div class="red__social">
           <a href="https://www.messenger.com/t/100001816486240/" target="_blank">
-            <img src="SVG/facebook-messenger.svg" alt="">
+            <img class="social__img" src="SVG/facebook-messenger.svg" alt="">
           </a>
         </div>
-        <div class="red__social instagram">
+        <!--***************** instagram ******************-->
+        <div class="red__social">
           <a href="https://www.instagram.com/davidzegarrahurtado/" target="_blank">
-            <img src="SVG/instagram.svg" alt="">
+            <img class="social__img" src="SVG/instagram.svg" alt="">
           </a>
         </div>
-        <div class="red__social youtube">
+        <!--***************** youtube ******************-->
+        <div class="red__social">
           <a href="https://www.youtube.com/channel/UCrTa1N4Ne2o3i1g5quybsww" target="_blank">
-            <img src="SVG/youtube.svg" alt="">
+            <img class="social__img" src="SVG/youtube.svg" alt="">
           </a>
         </div>
-        <div class="red__social telegram">
+        <!--***************** telegram ******************-->
+        <div class="red__social">
           <a href="https://t.me/ZegarraH" target="_blank">
-            <img src="SVG/telegram.svg" alt="">
+            <img class="social__img" src="SVG/telegram.svg" alt="">
           </a>
         </div>
-        <div class="red__social github">
+        <!--***************** github ******************-->
+        <div class="red__social">
           <a href="https://github.com/DzegarraH" target="_blank">
-            <img src="SVG/github.svg" alt="">
+            <img class="social__img" src="SVG/github.svg" alt="">
           </a>
         </div>
-        <div class="red__social whatsapp">
+        <!--***************** whatsapp ******************-->
+        <div class="red__social">
           <a href="https://wa.me/51920152738" target="_blank">
-            <img src="SVG/brand-whatsapp.svg" alt="">
+            <img class="social__img" src="SVG/brand-whatsapp.svg" alt="">
           </a>
         </div>
       </div>
       <!--====== BARS MÓVIL ======-->
       <div class="container-bars">
         <label for="btn">
-          <img src="/SVG/bars-solid.svg" alt="">
+          <img class="bars_img" src="/SVG/bars-solid.svg" alt="">
         </label>
         <input type="checkbox" id="btn" class="btn-menu">
         <!-- NAVEGACION ENLACES MÓVIL -->
         <nav class="container__nav-movil">
           <div class="nav__movil">
-            <div class="enlaces__nav"><a href="#inicio">
-                <h2>Inicio</h2>
-              </a></div>
-            <div class="enlaces__nav"><a href="#sobre-mi">
-                <h2>Sobre mí</h2>
-              </a></div>
-            <div class="enlaces__nav"><a href="#servicios">
-                <h2>Serviciós</h2>
-              </a></div>
-            <div class="enlaces__nav"><a href="#habilidades">
-                <h2>Habilidades</h2>
-              </a></div>
-            <div class="enlaces__nav"><a href="#portafolio">
-                <h2>PortFolio</h2>
-              </a></div>
-            <div class="enlaces__nav"><a href="#contacto">
-                <h2>Contacto</h2>
-              </a></div>
+            <div class="enlaces__nav">
+              <a href="#inicio">
+                <h2 class="nav__movil-titulo">Inicio</h2>
+              </a>
+            </div>
+            <div class="enlaces__nav">
+              <a href="#sobre-mi">
+                <h2 class="nav__movil-titulo">Sobre mí</h2>
+              </a>
+            </div>
+            <div class="enlaces__nav">
+              <a href="#servicios">
+                <h2 class="nav__movil-titulo">Serviciós</h2>
+              </a>
+            </div>
+            <div class="enlaces__nav">
+              <a href="#habilidades">
+                <h2 class="nav__movil-titulo">Habilidades</h2>
+              </a>
+            </div>
+            <div class="enlaces__nav">
+              <a href="#portafolio">
+                <h2 class="nav__movil-titulo">PortFolio</h2>
+              </a>
+            </div>
+            <div class="enlaces__nav">
+              <a href="#contacto">
+                <h2 class="nav__movil-titulo">Contacto</h2>
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -115,7 +134,7 @@
         Dar el ejemplo no es la principal manera de influir sobre los demás; es la única manera.
       </p>
       <div class="bienvenido__boton">
-        <a href="#portafolio">Ir a Portafolio</a>
+        <a class="boton__portafolio" href="#portafolio">Ir a Portafolio</a>
       </div>
     </div>
 
@@ -126,12 +145,12 @@
 
     <div class="container__sobre-mi">
       <div class="sobre-mi__img">
-        <img src="img/2.jpg" alt="">
+        <img class="sobre-mi__foto" src="img/2.jpg" alt="">
       </div>
       <div class="sobre-mi__descripcion">
         <p class="sobre-mi__titulo">SOBRE MÍ</p>
-        <h2>Hola, soy <span>David Zegarra</span></h2>
-        <h3>Desarrollador Web
+        <h2 class="sobre-mi__sub-titulo">Hola, soy <span class="subtitulo__span">David Zegarra</span></h2>
+        <h3 class="sobre-mi__sub-titulo-2">Desarrollador Web
           <p class="no-margin">
             Front-End
           </p>
@@ -142,7 +161,8 @@
           de nuevas metas y ganas de aprender más de la Programación.
         </p>
         <p class="sobre-mi__resumen">
-          Soy una persona que está siempre en constante aprendizaje, autodidacta, integra, puntual, comprometido con los objetivos de la empresa.
+          Soy una persona que está siempre en constante aprendizaje, autodidacta, integra, puntual, comprometido con los
+          objetivos de la empresa.
         </p>
         <div class="boton__sobremi">
           <a href="CV/CV.pdf" class="sobre-mi__cv" target="_blank" download="CV-Zegarra.pdf">Descargar CV</a>
@@ -154,47 +174,52 @@
 
   <!--====== SERVICIOS ======-->
   <section id="servicios">
-    <h2>MIS SERVICIOS</h2>
+    <h2 class="servicios__titulo">MIS SERVICIOS</h2>
     <div class="servicios__fila">
       <!-- HTML -->
       <div class="servicio  html5">
-        <div class="icono"><img src="SVG/html5.svg" alt=""></div>
-        <h3>
+        <div class="servicio__icono"><img class="servicio__img" src="SVG/html5.svg" alt=""></div>
+        <h3 class="titulo__servicio">
           Diseño Web en HTML
         </h3>
-        <hr>
+        <hr class="separador">
         <ul class="servicio__tecnica">
           <li>SEO</li>
           <li>Web</li>
         </ul>
-        <p>Páginas Web con buen SEO y Responsivas.</p>
+        <p class="servicio__descripcion">Páginas Web con buen SEO y Responsivas.</p>
       </div>
       <!-- CSS -->
       <div class="servicio css3">
-        <div class="icono"><img src="SVG/css3-alt.svg" alt=""></div>
-        <h3>
+        <div class="servicio__icono"><img class="servicio__img" src="SVG/css3-alt.svg" alt=""></div>
+        <h3 class="titulo__servicio">
           Estilo Web en CSS
         </h3>
-        <hr>
+        <hr class="separador">
         <ul class="servicio__tecnica">
           <li>SEO</li>
           <li>Web</li>
         </ul>
-        <p>Conocimientos en Especificidad, Cascada, Herencia, Animación, Variables, @media Query.</p>
+        <p class="servicio__descripcion">
+          Conocimientos en Especificidad, Cascada, Herencia, Animación, Variables, @media Query.
+        </p>
       </div>
       <!--====== JAVASCRIPT ======-->
       <div class="servicio js-">
-        <div class="icono"><img src="SVG/square-js.svg" alt=""></div>
-        <h3>
+        <div class="servicio__icono"><img class="servicio__img" src="SVG/square-js.svg" alt=""></div>
+        <h3 class="titulo__servicio">
           Programación en JavaScript
         </h3>
-        <hr>
+        <hr class="separador">
         <ul class="servicio__tecnica">
           <li>SEO</li>
           <li>Web</li>
         </ul>
-        <p>Interactividad Web, Eventos, Variables, Booleans, Strgins, Undefined NULL NAN, Funciones declarables, expresadas y
-        anónima, Array, Objet, etc.</p>
+        <p class="servicio__descripcion">
+          Interactividad Web, Eventos, Variables, Booleans, Strgins, Undefined NULL NAN, Funciones declarables,
+          expresadas y
+          anónima, Array, Objet, etc.
+        </p>
       </div>
     </div>
   </section>
@@ -209,13 +234,13 @@
         <div class="habilidad__img img__html5"><img src="SVG/html5.svg" alt=""></div>
         <div class="container-nivel img__html5">
           <h3 class="nivel__titulo">Nivel</h3>
-          <div class="p">
-            <p class="no-margin">Básico</p>
-            <p class="no-margin">Medio</p>
-            <p class="no-margin">Avanzado</p>
+          <div class="porcentaje">
+            <p class="porcentaje__description no-margin">Básico</p>
+            <p class="porcentaje__description no-margin">Medio</p>
+            <p class="porcentaje__description no-margin">Avanzado</p>
           </div>
           <div class="nivel__porcentaje">
-            <div class="porcentaje__barra"></div>
+            <div class="barra-html"></div>
           </div>
         </div>
       </div>
@@ -224,10 +249,10 @@
         <div class="habilidad__img img__css3"><img src="SVG/css3-alt.svg" alt=""></div>
         <div class="container-nivel img__css3">
           <h3 class="nivel__titulo">Nivel</h3>
-          <div class="p">
-            <p class="no-margin">Básico</p>
-            <p class="no-margin">Medio</p>
-            <p class="no-margin">Avanzado</p>
+          <div class="porcentaje">
+            <p class="porcentaje__description no-margin">Básico</p>
+            <p class="porcentaje__description no-margin">Medio</p>
+            <p class="porcentaje__description no-margin">Avanzado</p>
           </div>
           <div class="nivel__porcentaje">
             <div class="barra-css"></div>
@@ -239,10 +264,10 @@
         <div class="habilidad__img img__js"><img src="SVG/square-js.svg" alt=""></div>
         <div class="container-nivel img__js">
           <h3 class="nivel__titulo">Nivel</h3>
-          <div class="p">
-            <p class="no-margin">Básico</p>
-            <p class="no-margin">Medio</p>
-            <p class="no-margin">Avanzado</p>
+          <div class="porcentaje">
+            <p class="porcentaje__description no-margin">Básico</p>
+            <p class="porcentaje__description no-margin">Medio</p>
+            <p class="porcentaje__description no-margin">Avanzado</p>
           </div>
           <div class="nivel__porcentaje">
             <div class="barra-js"></div>
@@ -260,27 +285,30 @@
 
     <div class="container-portafolio">
       <div class="portafolio">
-        <a href="https://dzegarrah.netlify.app/" class="portafolio__img"><img src="img-portafolio/pagina-personal.png"
-            alt=""></a>
+        <a href="https://dzegarrah.netlify.app/" class="portafolio__enlace">
+          <img class="portafolio__img" src="img-portafolio/pagina-personal.png" alt="">
+        </a>
         <div class="info">
-          <h3>Página Web personal</h3>
-          <p class="no-margin">Diseño Web</p>
+          <h3 class="mini-titulo">Página Web personal</h3>
+          <p class="descripcon-proyecto no-margin">Diseño Web</p>
         </div>
       </div>
       <div class="portafolio">
-        <a href="https://nicecafe.netlify.app/index.html" target="_blank" class="portafolio__img"><img
-            src="img-portafolio/BlogdeCafé.png" alt=""></a>
+        <a href="https://nicecafe.netlify.app/index.html" target="_blank" class="portafolio__enlace">
+          <img class="portafolio__img" src="img-portafolio/BlogdeCafé.png" alt="">
+        </a>
         <div class="info">
-          <h3>Blog de Café</h3>
-          <p class="no-margin">Diseño Web</p>
+          <h3 class="mini-titulo">Blog de Café</h3>
+          <p class="descripcon-proyecto no-margin">Diseño Web</p>
         </div>
       </div>
       <div class="portafolio">
-        <a href="https://freelancerz.netlify.app/" target="_blank" class="portafolio__img"><img
-            src="img-portafolio/Freelancer.png" alt=""></a>
+        <a href="https://freelancerz.netlify.app/" target="_blank" class="portafolio__enlace">
+          <img class="portafolio__img" src="img-portafolio/Freelancer.png" alt="">
+        </a>
         <div class="info">
-          <h3>Proyecto Freelancer</h3>
-          <p class="no-margin">Diseño Web</p>
+          <h3 class="mini-titulo">Proyecto Freelancer</h3>
+          <p class="descripcon-proyecto no-margin">Diseño Web</p>
         </div>
       </div>
     </div>
@@ -326,38 +354,37 @@
 
   <!--====== FOOTER ======-->
   <footer class="footer">
-
-    <h2>Todos los derechos reservados - 2022</h2>
+    <h2 class="footer__titulo">Todos los derechos reservados - 2022</h2>
 
     <div class="footer_container">
       <div class="footer__social messenger">
         <a href="https://www.messenger.com/t/100001816486240/" target="_blank">
-          <img src="SVG/facebook-messenger.svg" alt="">
+          <img class="footer__img" src="SVG/facebook-messenger.svg" alt="">
         </a>
       </div>
       <div class="footer__social instagram">
         <a href="https://www.instagram.com/davidzegarrahurtado/" target="_blank">
-          <img src="../SVG/instagram.svg" alt="">
+          <img class="footer__img" src="../SVG/instagram.svg" alt="">
         </a>
       </div>
       <div class="footer__social youtube">
         <a href="https://www.youtube.com/channel/UCrTa1N4Ne2o3i1g5quybsww" target="_blank">
-          <img src="../SVG/youtube.svg" alt="">
+          <img class="footer__img" src="../SVG/youtube.svg" alt="">
         </a>
       </div>
       <div class="footer__social telegram">
         <a href="https://t.me/ZegarraH" target="_blank">
-          <img src="SVG/telegram.svg" alt="">
+          <img class="footer__img" src="SVG/telegram.svg" alt="">
         </a>
       </div>
       <div class="footer__social github">
         <a href="https://github.com/DzegarraH" target="_blank">
-          <img src="../SVG/github.svg" alt="">
+          <img class="footer__img" src="../SVG/github.svg" alt="">
         </a>
       </div>
       <div class="footer__social whatsapp">
         <a href="https://wa.me/51920152738" target="_blank">
-          <img src="SVG/brand-whatsapp.svg" alt="">
+          <img class="footer__img" src="SVG/brand-whatsapp.svg" alt="">
         </a>
       </div>
     </div>
