@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="SVG/icono.svg"> <!-- para pc -->
   <link rel="apple-touch-icon" href="SVG/icono.svg"> <!-- para movil -->
-  <link rel="theme-color" href="#00000099"> <!-- barra de navegacion en movil  -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>DzegarraH</title>
@@ -28,12 +27,24 @@
       </div>
       <!--====== NAVEGACION ENLACES DESKTOP ======-->
       <nav class="container__nav-desktop">
-        <div class="enlaces__nav"><a href="#inicio">Inicio</a></div>
-        <div class="enlaces__nav"><a href="#sobre-mi">Sobre mí</a></div>
-        <div class="enlaces__nav"><a href="#servicios">Serviciós</a></div>
-        <div class="enlaces__nav"><a href="#habilidades">Habilidades</a></div>
-        <div class="enlaces__nav"><a href="#portafolio">PortFolio</a></div>
-        <div class="enlaces__nav"><a href="#contacto">Contacto</a></div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#inicio">Inicio</a>
+        </div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#sobre-mi">Sobre mí</a>
+        </div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#servicios">Serviciós</a>
+        </div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#habilidades">Habilidades</a>
+        </div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#portafolio">PortFolio</a>
+        </div>
+        <div class="enlaces__nav">
+          <a class="desktop__enlaces" href="#contacto">Contacto</a>
+        </div>
       </nav>
 
       <!--====== REDES SOCIALES MOVIL Y DESKTOP ======-->
@@ -125,7 +136,7 @@
         Bienvenidos
       </p>
       <h2 class="bienvenido__texto">
-        Soy <span>David Zegarra</span>, Desarrollador Web
+        Soy <span class="bienvenido__reducir">David Zegarra</span>, Desarrollador Web
         <p class="bienvenido__subtexto">
           Front-End
         </p>
@@ -178,7 +189,9 @@
     <div class="servicios__fila">
       <!-- HTML -->
       <div class="servicio  html5">
-        <div class="servicio__icono"><img class="servicio__img" src="SVG/html5.svg" alt=""></div>
+        <div class="servicio__icono">
+          <img class="servicio__img" src="SVG/html5.svg" alt="">
+        </div>
         <h3 class="titulo__servicio">
           Diseño Web en HTML
         </h3>
@@ -191,7 +204,9 @@
       </div>
       <!-- CSS -->
       <div class="servicio css3">
-        <div class="servicio__icono"><img class="servicio__img" src="SVG/css3-alt.svg" alt=""></div>
+        <div class="servicio__icono">
+          <img class="servicio__img" src="SVG/css3-alt.svg" alt="">
+        </div>
         <h3 class="titulo__servicio">
           Estilo Web en CSS
         </h3>
@@ -206,7 +221,9 @@
       </div>
       <!--====== JAVASCRIPT ======-->
       <div class="servicio js-">
-        <div class="servicio__icono"><img class="servicio__img" src="SVG/square-js.svg" alt=""></div>
+        <div class="servicio__icono">
+          <img class="servicio__img" src="SVG/square-js.svg" alt="">
+        </div>
         <h3 class="titulo__servicio">
           Programación en JavaScript
         </h3>
@@ -231,7 +248,9 @@
     <div class="habilidades__html-css-js">
       <!--====== HABILIDADES  HTM ======-->
       <div class="container__lenguaje">
-        <div class="habilidad__img img__html5"><img src="SVG/html5.svg" alt=""></div>
+        <div class="habilidad__img img__html5">
+          <img class="img__habilidades" src="SVG/html5.svg" alt="">
+        </div>
         <div class="container-nivel img__html5">
           <h3 class="nivel__titulo">Nivel</h3>
           <div class="porcentaje">
@@ -246,7 +265,9 @@
       </div>
       <!--====== HABILIDADES  css ======-->
       <div class="container__lenguaje">
-        <div class="habilidad__img img__css3"><img src="SVG/css3-alt.svg" alt=""></div>
+        <div class="habilidad__img img__css3">
+          <img class="img__habilidades" src="SVG/css3-alt.svg" alt="">
+        </div>
         <div class="container-nivel img__css3">
           <h3 class="nivel__titulo">Nivel</h3>
           <div class="porcentaje">
@@ -261,7 +282,9 @@
       </div>
       <!--====== HABILIDADES  JAVASCRIPT ======-->
       <div class="container__lenguaje">
-        <div class="habilidad__img img__js"><img src="SVG/square-js.svg" alt=""></div>
+        <div class="habilidad__img img__js">
+          <img class="img__habilidades" src="SVG/square-js.svg" alt="">
+        </div>
         <div class="container-nivel img__js">
           <h3 class="nivel__titulo">Nivel</h3>
           <div class="porcentaje">

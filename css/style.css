@@ -59,6 +59,7 @@ a {
     url(../img/Qué-es-full-stack-Pygmalion-Tech.png);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
 }
 
 /* ====== NAVEGACIÓN FIJA ====== */
@@ -82,7 +83,7 @@ a {
 
 .logo__titulo {
   color: var(--tiuto);
-  margin-top: -.4rem;
+  margin-top: -0.4rem;
 }
 
 /* ====== NAVEGACIÓN ENLACES DESKTOP ====== */
@@ -179,7 +180,7 @@ a {
   font-weight: bold;
 }
 
-.bienvenido__texto span {
+.bienvenido__reducir {
   color: var(--tiuto);
   font-size: 1.5rem;
 }
@@ -257,7 +258,7 @@ a {
   margin-top: 1rem;
 }
 
-.sobre-mi__sub-titulo{
+.sobre-mi__sub-titulo {
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
@@ -347,7 +348,7 @@ a {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .servicio__img {
@@ -362,7 +363,7 @@ a {
   font-weight: bold;
 }
 
-.separador{
+.separador {
   width: 30%;
   margin-bottom: 1rem;
 }
@@ -378,7 +379,7 @@ a {
 
 .servicio__descripcion {
   font-size: 1.3rem;
-  margin: .5rem;
+  margin: 0.5rem;
   letter-spacing: 2px;
 }
 
@@ -458,7 +459,7 @@ a {
   margin-top: 1rem;
 }
 
-.porcentaje__description{
+.porcentaje__description {
   font-size: 1.8rem;
 }
 
@@ -470,7 +471,7 @@ a {
   margin: 0.5rem 0;
 }
 
-.barra-html{
+.barra-html {
   width: 48%;
   height: 4px;
   border-radius: 2.5px 0 0 2.5px;
@@ -490,7 +491,6 @@ a {
   border-radius: 2.5px 0 0 2.5px;
   background-color: var(--js);
 }
-
 
 /* ====== PORTAFOLIO ====== */
 #portafolio {
@@ -705,31 +705,30 @@ a {
 
 @media (min-width: 768px) {
   /* ====== BIENVENIDO ====== */
-  .container-bienvenida .bienvenido {
+  .bienvenido {
     font-size: 3.5rem;
   }
 
   /* ====== SOBRE MI ====== */
-  #sobre-mi .container__sobre-mi {
+  .container__sobre-mi {
     height: 70rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion {
+  .sobre-mi__descripcion {
     margin: 0 auto;
     padding-left: 4rem;
     height: 40rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__titulo {
+  .sobre-mi__titulo {
     margin-left: -4rem;
   }
-
 
   /* ====== SERVICIO HTML CSS JS ====== */
   #servicios {
     height: 60rem;
   }
-  #servicios .servicios__fila {
+  .servicios__fila {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
@@ -737,28 +736,23 @@ a {
   }
 
   /* ====== PORTAFOLIO ====== */
-  #portafolio .container-portafolio .portafolio .portafolio__img img {
+  .portafolio__img {
     border-radius: 1rem;
   }
 
-  .footer .footer_container {
+  .footer_container {
     justify-content: space-evenly;
   }
 }
 
 @media (min-width: 1024px) {
-  /* ====== HEADER HERO ====== */
-  #inicio {
-  background-position: center center;
-  }
-
   /* ====== NAVEGACIÓN FIJA ====== */
   .container-header {
     grid-template-columns: 1fr 3fr 1fr;
   }
 
   /* ====== LOGO ====== */
-  .container__logo h1 {
+  .logo__titulo {
     font-size: 3.5rem;
   }
 
@@ -772,25 +766,23 @@ a {
     text-align: center;
   }
 
-  .container__nav-desktop .enlaces__nav a {
+  .enlaces__nav {
+    margin-top: -0.4rem;
+  }
+
+  .enlaces__nav,
+  .desktop__enlaces {
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
     font-size: 2rem;
   }
 
-  .container__nav-desktop .enlaces__nav,
-  .container__nav-desktop .enlaces__nav a {
-    transition: color 0.5s ease, transform 0.5s ease;
+  .enlaces__nav:hover {
+    transform: scale(1.1);
   }
 
-  .container__nav-desktop .enlaces__nav:hover {
-    transform: scale(1.2);
-  }
-
-  .container__nav-desktop .enlaces__nav a:hover {
+  .desktop__enlaces:hover {
     color: var(--tiuto);
-  }
-
-  .enlaces__nav a {
-    font-size: 1.7rem;
   }
 
   /* ====== REDES SOCIALES MOVIL Y DESKTOP ====== */
@@ -800,20 +792,20 @@ a {
     margin-right: 1rem;
   }
 
-  .container__redes .red__social {
+  .red__social {
     display: flex;
     justify-content: center;
-    transition: filter 0.5s ease-in-out, transform 0.5s ease-in;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in;
     filter: saturate(0);
   }
 
-  .container__redes .red__social:hover {
+  .red__social:hover {
     filter: saturate(1);
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 
-  .red__social a img {
-    width: 2rem;
+  .social__img {
+    width: 2.2rem;
   }
 
   /* ====== BARS MÓVIL ====== */
@@ -822,46 +814,46 @@ a {
   }
 
   /* ====== BIENVENIDO ====== */
-  .container-bienvenida .bienvenido {
+  .bienvenido {
     font-size: 5rem;
   }
 
-  .container-bienvenida .bienvenido__texto {
+  .bienvenido__texto {
     font-size: 4rem;
   }
 
-  .container-bienvenida .bienvenido__texto span {
+  .bienvenido__reducir {
     font-size: 2.5rem;
   }
 
-  .container-bienvenida .bienvenido__texto .bienvenido__subtexto {
+  .bienvenido__subtexto {
     font-size: 4rem;
   }
 
-  .container-bienvenida .bienvenido__resumen {
+  .bienvenido__resumen {
     font-size: 3rem;
     font-weight: 600;
   }
 
-  .container-bienvenida .bienvenido__boton {
+  .bienvenido__boton {
     display: flex;
     justify-content: center;
   }
 
-  .container-bienvenida .bienvenido__boton a {
+  .boton__portafolio {
     padding: 2rem;
     border: 2px solid var(--blanco);
     border-radius: 3rem;
     font-size: 3rem;
     color: var(--blanco);
     font-weight: 500;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.5s ease, color 0.3s ease, transform 0.3s ease;
   }
 
-  .container-bienvenida .bienvenido__boton a:hover {
+  .boton__portafolio:hover {
     color: var(--negro);
     background-color: #1dd416;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   /* ====== SOBRE MI ====== */
@@ -870,25 +862,25 @@ a {
     max-width: 100rem;
   }
 
-  #sobre-mi .container__sobre-mi {
+  .container__sobre-mi {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     padding: 5rem;
     align-items: center;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__img {
+  .sobre-mi__img {
     margin: auto auto;
     max-width: 40rem;
     max-height: 45rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__img img {
+  .sobre-mi__foto {
     max-width: 40rem;
     max-height: 45rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion {
+  .sobre-mi__descripcion {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     max-height: 40rem;
@@ -896,69 +888,60 @@ a {
     padding-left: 3rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__titulo {
+  .sobre-mi__titulo {
     text-align: start;
     padding: 0;
     margin: 2rem 1rem;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion h2 {
+  .sobre-mi__sub-titulo {
     text-align: start;
     margin-left: 0;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion h3 {
-    font-size: 2rem;
+  .sobre-mi__sub-titulo-2 {
+    font-size: 2.2rem;
     letter-spacing: 2px;
     font-weight: 400;
     margin-left: 0;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion .sobre-mi__resumen {
-    width: 90%;
-    font-size: 1.8rem;
+  .sobre-mi__resumen {
+    font-size: 2rem;
     padding: 1rem;
     padding-left: 0;
     margin: 0;
   }
 
-  #sobre-mi .container__sobre-mi .sobre-mi__descripcion .boton__sobremi {
+  .boton__sobremi {
     justify-content: flex-start;
   }
 
-  #sobre-mi
-    .container__sobre-mi
-    .sobre-mi__descripcion
-    .boton__sobremi
-    .sobre-mi__cv {
-    transition: background-color 0.5s ease, transform 0.5s ease;
+  .sobre-mi__cv {
+    transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 1rem;
   }
 
-  #sobre-mi
-    .container__sobre-mi
-    .sobre-mi__descripcion
-    .boton__sobremi
-    .sobre-mi__cv:hover {
+  .sobre-mi__cv:hover {
     background-color: var(--tiuto);
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   /* ====== SERVICIO HTML CSS JS ====== */
 
-  #servicios .servicios__fila {
+  .servicios__fila {
     margin: 0 9rem;
   }
 
-  #servicios .servicios__fila .servicio,
+  .servicio,
   .html5,
   .css3,
   .js- {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in,
-      background-color 0.5s ease-in-out;
+      background-color 0.3s ease-in-out;
   }
 
-  #servicios .servicios__fila .servicio:hover {
+  .servicio:hover {
     transform: scale(1.03);
     background-color: rgba(235, 235, 235, 0.7);
   }
@@ -980,22 +963,21 @@ a {
     padding-top: 4rem;
     height: 65rem;
     background-attachment: fixed;
-  background-size: cover;
-
+    background-size: cover;
   }
-  #habilidades .habilidades__html-css-js {
+  .habilidades__html-css-js {
     align-items: center;
   }
 
-  #habilidades .habilidades__html-css-js .container__lenguaje {
+  .container__lenguaje {
     flex-direction: row;
     width: 60vw;
   }
 
-  #habilidades .habilidades__html-css-js .container__lenguaje .habilidad__img {
+  .habilidad__img {
     height: 10rem;
     width: 10rem;
-    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
 
   .img__html5:hover {
@@ -1010,51 +992,33 @@ a {
     box-shadow: 0px 0px 10px 1px var(--js);
   }
 
-  #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .habilidad__img:hover {
+  .habilidad__img:hover {
     background-color: rgba(182, 180, 180, 0.8);
     cursor: pointer;
   }
 
-  #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .habilidad__img
-    img {
+  .img__habilidades {
     width: 7rem;
     height: 7rem;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
   }
 
-  #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .habilidad__img
-    img:hover {
+  .img__habilidades:hover {
     transform: scale(1.05);
   }
 
-  #habilidades .habilidades__html-css-js .container__lenguaje .container-nivel {
-    transition: transform 0.5s ease, background-color 0.5s ease,
-      box-shadow 0.5s ease;
+  .container-nivel {
+    transition: transform 0.3s ease, background-color 0.3s ease,
+      box-shadow 0.3s ease;
   }
-  #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .container-nivel:hover {
+
+  .container-nivel:hover {
     transform: scaley(1.05);
     background-color: rgba(182, 180, 180, 0.8);
     cursor: pointer;
   }
 
-  #habilidades
-    .habilidades__html-css-js
-    .container__lenguaje
-    .container-nivel
-    .p
-    p {
+  .porcentaje__description {
     font-size: 2rem;
   }
 
@@ -1067,7 +1031,7 @@ a {
     justify-content: space-around;
   }
 
-  #portafolio .container-portafolio {
+  .container-portafolio {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     margin: 4rem auto;
@@ -1076,30 +1040,30 @@ a {
     gap: 4rem;
   }
 
-  #portafolio .container-portafolio .portafolio {
+  .portafolio {
     max-width: 39rem;
     position: relative;
-    transition: filter 0.5s ease;
+    transition: filter 0.4s ease;
     filter: saturate(0);
   }
 
-  #portafolio .container-portafolio .portafolio:hover {
+  .portafolio:hover {
     filter: saturate(2);
   }
 
-  #portafolio .container-portafolio .portafolio .portafolio__img img {
+  .portafolio__img {
     max-width: 30rem;
     max-height: 30rem;
     border-radius: 1rem;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.3s ease;
   }
 
-  #portafolio .container-portafolio .portafolio .portafolio__img img:hover {
+  .portafolio__img:hover {
     box-shadow: 0 0 1.2rem 0.4rem var(--negro);
   }
 
   /* ====== CONTACTO ====== */
-  #contacto .titulo__contacto {
+  .titulo__contacto {
     padding-top: 2rem;
   }
 
@@ -1131,7 +1095,7 @@ a {
     width: 100%;
   }
 
-  .campo__botom .boton__contacto-final {
+  .boton__contacto-final {
     margin-right: 2rem;
     border: 2px solid var(--negro);
     border-radius: 2rem;
@@ -1139,29 +1103,30 @@ a {
     color: var(--negro);
     font-weight: 500;
     width: auto;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-  .campo__botom .boton__contacto-final:hover {
+  .boton__contacto-final:hover {
     background-color: var(--tiuto);
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   /* ====== FOOTER ====== */
-  .footer h2 {
+  .footer__titulo {
     font-size: 2rem;
   }
 
-  .footer .footer_container .footer__social {
-    transition: transform 0.5s ease, filter 0.5s ease;
+  .footer__social {
+    transition: transform 0.3s ease, filter 0.3s ease;
     filter: grayscale(1);
   }
 
-  .footer .footer_container .footer__social:hover {
+  .footer__social:hover {
     transform: scale(1.2);
     filter: grayscale(0);
   }
-  .footer .footer_container .footer__social a img {
+
+  .footer__img {
     height: 2.5rem;
     width: 2.5rem;
   }
