@@ -69,7 +69,7 @@ a {
   width: 100%;
   min-height: 4rem;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   background-color: var(--negro-transparente);
   z-index: 99;
 }
@@ -78,7 +78,8 @@ a {
 .container__logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 1rem;
 }
 
 .logo__titulo {
@@ -97,7 +98,6 @@ a {
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   gap: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .red__social {
@@ -512,7 +512,7 @@ a {
 
 .container-portafolio {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
@@ -544,7 +544,6 @@ a {
   bottom: 0.4rem;
   padding-bottom: 1rem;
   background-color: var(--fondo-info);
-  border-radius: 0 0 1rem 1rem;
 }
 
 .mini-titulo {
@@ -740,6 +739,11 @@ a {
     border-radius: 1rem;
   }
 
+  .info {
+  border-radius: 0 0 1rem 1rem;
+
+  }
+
   .footer_container {
     justify-content: space-evenly;
   }
@@ -752,6 +756,10 @@ a {
   }
 
   /* ====== LOGO ====== */
+  .container__logo {
+    justify-content: center;
+  }
+  
   .logo__titulo {
     font-size: 3.5rem;
   }
@@ -1032,16 +1040,16 @@ a {
   }
 
   .container-portafolio {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     margin: 4rem auto;
-    justify-items: center;
-    align-items: center;
+    justify-content:space-between ;
     gap: 4rem;
+    width: 100%;
   }
 
   .portafolio {
-    max-width: 39rem;
+    width: 100%;
     position: relative;
     transition: filter 0.4s ease;
     filter: saturate(0);
@@ -1052,8 +1060,8 @@ a {
   }
 
   .portafolio__img {
-    max-width: 30rem;
-    max-height: 30rem;
+    width: 100%;
+    max-height: 22rem;
     border-radius: 1rem;
     transition: box-shadow 0.3s ease;
   }
