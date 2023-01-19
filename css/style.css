@@ -734,16 +734,8 @@ a {
     gap: 1.5rem;
   }
 
-  /* ====== PORTAFOLIO ====== */
-  .portafolio__img {
-    border-radius: 1rem;
-  }
-
-  .info {
-  border-radius: 0 0 1rem 1rem;
-
-  }
-
+  /* ====== FOOTER ====== */
+  
   .footer_container {
     justify-content: space-evenly;
   }
@@ -938,7 +930,8 @@ a {
   /* ====== SERVICIO HTML CSS JS ====== */
 
   .servicios__fila {
-    margin: 0 9rem;
+    margin: 0 auto;
+    width: 70%;
   }
 
   .servicio,
@@ -1062,7 +1055,6 @@ a {
   .portafolio__img {
     width: 100%;
     max-height: 22rem;
-    border-radius: 1rem;
     transition: box-shadow 0.3s ease;
   }
 
