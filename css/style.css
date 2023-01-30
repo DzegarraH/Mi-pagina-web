@@ -781,7 +781,7 @@ a {
   .enlaces__nav:hover {
     transform: scale(1.1);
   }
-
+  
   .desktop__enlaces:hover {
     color: var(--tiuto);
   }
